@@ -10,7 +10,7 @@ def scene1():
     time.sleep(7)
     print("Out of furthered curousity, you go down the hallways to test another room.")
     time.sleep(8)
-    print("You make it to the end of the hallway when you realize that the fron-tdoor at the bottom of the steps is wide open")
+    print("You make it to the end of the hallway when you realize that the front-door at the bottom of the steps is wide open")
     print()
   
 def choosePath():
@@ -21,15 +21,15 @@ def choosePath():
     return path 
       
 def checkPath(chosenPath) :
-    print("You need to decide what to do")
+    print("The moment is now")
     time.sleep(2)
-    print("Bolting to the door seeems viable")
+    print("You decided with your choice")
     time.sleep(2)
-    print("Does hiding in the bedroom closet make sense?")
+    print("Is it the right one?")
     print()
-    time.sleep()
+    
      
-    correctPath = random.randint(1, 2)
+    correctPath = (1)
       
     if chosenPath == str(correctPath) :
         print("You succusfully ran out the door")
@@ -37,15 +37,26 @@ def checkPath(chosenPath) :
     else:
         print("You hesitate, you're grabbed by a set of hands coming from the bathroom to your back")
         print("You fade into the darkness and your fate is left with no question")
+
+def scene2():
+    print("1.You make a bolt to the stairs or 2.You hide in the closet in your bedroom")
+
+def scene3():
+    time.sleep(2)
+    print("An hour later, police are called to the scene of the crime..your house")
+    time.sleep(5)
+    print("Upon investigating,the police find nobody in the house and no scenes of a struggle.")
+    time.sleep(5)
+    print("However, the fusebox was discovered to had been turned off")
+
+
   
 playAgain = "yes"
 while playAgain == "yes" or playAgain == "y":
     scene1()
-choice = choosePath()
-checkPath(choice)
-playAgain = input ("Do you want to play again? (yes or y to continue playing) : ")
-
-
-
-
+    scene2()
+    choice = choosePath()
+    checkPath(choice)
+    scene3()
+    playAgain = input ("Do you want to play again? (yes or y to continue playing) : ")
 
