@@ -1,4 +1,4 @@
-# Fight-FLight-or-Freeze
+# Fight-Flight-Freeze
 Justin Hawkins Repository for project
 
 Idea for project : 
